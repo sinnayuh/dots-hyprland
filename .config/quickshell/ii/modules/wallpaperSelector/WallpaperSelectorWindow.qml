@@ -40,6 +40,7 @@ PanelWindow {
     margins {
         top: Appearance.sizes.barHeight + Appearance.sizes.hyprlandGapsOut
     }
+
     // get wallpaper metadata
     function getWallpaperMetadata(path) {
         let filename = path.split('/').pop();
@@ -73,16 +74,16 @@ PanelWindow {
     //     }
     // }
 
-    WallpaperDebugOverlay {
-        id: debugOverlay
-        previewMode: panelWindow.previewMode
-        implicitWindowWidth: panelWindow.implicitWidth
-        implicitWindowHeight: panelWindow.implicitHeight
-        layoutImplicitWidth: layout.implicitWidth
-        layoutImplicitHeight: layout.implicitHeight
-        filteredWallpapersCount: panelWindow.filteredWallpapers.length
-        gridCurrentIndex: wallpaperGrid.currentIndex
-    }
+    // WallpaperDebugOverlay {
+    //    id: debugOverlay
+    //    previewMode: panelWindow.previewMode
+    //    implicitWindowWidth: panelWindow.implicitWidth
+    //    implicitWindowHeight: panelWindow.implicitHeight
+    //    layoutImplicitWidth: layout.implicitWidth
+    //    layoutImplicitHeight: layout.implicitHeight
+    //    filteredWallpapersCount: panelWindow.filteredWallpapers.length
+    //    gridCurrentIndex: wallpaperGrid.currentIndex
+    // }
 
     ColumnLayout {
         id: layout
